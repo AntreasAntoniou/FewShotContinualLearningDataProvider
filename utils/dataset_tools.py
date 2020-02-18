@@ -61,9 +61,6 @@ def check_download_dataset(dataset_name):
             print("Not found dataset folder structure.. searching for .tar.bz2 file")
             zip_directory = "{}.tar.bz2".format(os.path.join(os.environ['DATASET_DIR'], datasets[dataset_idx]))
             if not os.path.exists(zip_directory):
-                print("Not found zip file, downloading..", zip_directory)
-                # download_dataset(dataset_name="{}.tar.bz2".format(datasets[dataset_idx]),
-                #                  path_to_save=os.environ['DATASET_DIR'])
                 return FileNotFoundError('Dataset is missing from the datasets folder, please download datasets and place '
                                          'them in the datasets folder as specified in the README.md file')
 
@@ -95,7 +92,7 @@ def check_download_dataset(dataset_name):
                                      ' line 84-88 specifies the dataset you are using and its file count correctly')
 
         if not done:
-            check_download_dataset(dataset_name, dataset_path)
+            check_download_dataset(dataset_name)
 
 
 def load_datapaths(dataset_dir, dataset_name, indexes_of_folders_indicating_class, labels_as_int):

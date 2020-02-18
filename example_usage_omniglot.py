@@ -9,7 +9,7 @@ image_width = 28
 image_channels = 1
 
 os.environ['DATASET_DIR'] = 'datasets'
-print('Here', os.path.abspath(os.environ['DATASET_DIR']))
+
 if image_channels == 3:
     transforms = [transforms.Resize(size=(image_height, image_width)), transforms.ToTensor(),
                   ConvertToThreeChannels(),
