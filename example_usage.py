@@ -15,7 +15,7 @@ if image_channels == 3:
 elif image_channels == 1:
     transforms = [transforms.Resize(size=(image_height, image_width)), transforms.ToTensor()]
 
-data = FewShotLearningDatasetParallel(dataset_path='/home/antreas/datasets/bold_imagenet', dataset_name='bold_imagenet',
+data = FewShotLearningDatasetParallel(dataset_path='/path/to/dataset/', dataset_name='SlimageNet64',
                                       indexes_of_folders_indicating_class=[-3, -2],
                                       train_val_test_split=[0.0, 0.0, 0.0],
                                       labels_as_int=False, transforms=transforms, num_classes_per_set=5,
