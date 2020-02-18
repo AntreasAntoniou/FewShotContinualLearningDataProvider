@@ -24,7 +24,7 @@ train_data = FewShotLearningDatasetParallel(dataset_name='SlimageNet64',
                                       num_support_sets=10,
                                       num_samples_per_support_class=1, num_channels=3,
                                       num_samples_per_target_class=5, seed=0, sets_are_pre_split=True,
-                                      load_into_memory=False, set_name='train', num_tasks_per_epoch=600,
+                                      load_into_memory=False, set_name='train', num_tasks_per_epoch=500,
                                       overwrite_classes_in_each_task=False, class_change_interval=1)
 
 val_data = FewShotLearningDatasetParallel(dataset_name='SlimageNet64',
@@ -34,7 +34,7 @@ val_data = FewShotLearningDatasetParallel(dataset_name='SlimageNet64',
                                             num_support_sets=10,
                                             num_samples_per_support_class=1, num_channels=3,
                                             num_samples_per_target_class=5, seed=0, sets_are_pre_split=True,
-                                            load_into_memory=False, set_name='val', num_tasks_per_epoch=500,
+                                            load_into_memory=False, set_name='val', num_tasks_per_epoch=600,
                                             overwrite_classes_in_each_task=False, class_change_interval=1)
 
 test_data = FewShotLearningDatasetParallel(dataset_name='SlimageNet64',
