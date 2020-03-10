@@ -1,7 +1,7 @@
 # Data Provider (version 0.1) for Benchmarks for Continual Few-Shot Learning in Pytorch
 The original code for the data providers and the datasets of the paper ["Benchmarks for Continual Few-Shot Learning"](). 
 
-This repo is consistent with the specifications listed in version 0.1 of the CFSL [specs document].(https://github.com/AntreasAntoniou/FewShotContinualLearningDataProvider/blob/master/Specification_for_Continual_Few_Shot_Learning.pdf)
+This repo is consistent with the specifications listed in version 0.1 of the CFSL [specs document](https://github.com/AntreasAntoniou/FewShotContinualLearningDataProvider/blob/master/Specification_for_Continual_Few_Shot_Learning.pdf).
 
 ## Introduction
 
