@@ -1,11 +1,9 @@
-# Data Provider (version 0.1) for Benchmarks for Continual Few-Shot Learning in Pytorch
-The original code for the data providers and the datasets of the paper ["Benchmarks for Continual Few-Shot Learning"](). 
-
-This repo is consistent with the specifications listed in version 0.1 of the CFSL [specs document](https://github.com/AntreasAntoniou/FewShotContinualLearningDataProvider/blob/master/Specification_for_Continual_Few_Shot_Learning.pdf).
+# Data Provider for Benchmarks for Continual Few-Shot Learning in Pytorch
+The original code for the data providers and the datasets of the paper ["Defining Benchmarks for Continual Few-Shot Learning"]().
 
 ## Introduction
 
-Welcome. This repository includes code for the data providers that can generate samples for the task types found in ["Benchmarks for Continual Few-Shot Learning"]().
+Welcome. This repository includes code for the data providers that can generate samples for the task types found in ["Defining Benchmarks for Continual Few-Shot Learning"]().
 Furthermore, it provides links to both Omniglot and SlimageNet datasets.
 
 ## Installation
@@ -31,17 +29,13 @@ To execute an installation script simply run:
 ## Datasets
 We provide functionality for both SlimageNet and Omniglot. We have automated the unzipping and usage of the datasets, all one needs to do is download them from:
 
-- [SlimageNet repository]()
-- [Omniglot part_1](https://github.com/brendenlake/omniglot/blob/master/python/images_background.zip)
-- [Omniglot part_2](https://github.com/brendenlake/omniglot/blob/master/python/images_evaluation.zip)
+- [SlimageNet repository](https://zenodo.org/record/3672132)
+- [Omniglot](https://drive.google.com/file/d/1b0bWMgRsaBmZyV6uzMnl-LI7JE_2sGxn/view?usp=sharing)
 
 Once downloaded, please place them in the datasets folder in this repo. The rest will be done automagically when you 
 run an experiment.
 
-For **Omniglot**, unzip the two folders and mix their contents into a single folder which should then be placed under the 
-datasets folder.
-
-**Note**: By downloading and using the SlimageNet dataset, you accept terms and conditions found in [imagenet_license.md](https://github.com/AntreasAntoniou/HowToTrainYourMAMLPytorch/blob/master/imagenet_license.md) 
+**Note**: By downloading and using the SlimageNet dataset, you accept terms and conditions found in [imagenet_license.md](/imagenet_license.md)
 
 #### Other Datasets:
 We provide a mechanism for quick and easy training of models on any image-based datasets. 
@@ -94,8 +88,5 @@ To run an experiment from the paper on Omniglot:
 3. Find which experiment you want to run.
 4. ```python example_usage_omniglot.py```
 
-
-# Acnknowledgments
-Thanks to the University of Edinburgh and ESPRC research council for funding this research.
  
  
